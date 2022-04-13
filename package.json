@@ -1,42 +1,48 @@
 {
-    "title": "Portfolio",
-    "name": "shivansh-portfolio",
-    "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
-    },
-    "description": "",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.2.1",
+    "react-dom": "^17.0.2",
+    "react-github-calendar": "^3.2.2",
+    "react-icons": "^4.3.1",
+    "react-parallax-tilt": "^1.6.5",
+    "react-pdf": "^5.7.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "react-tsparticles": "^1.42.2",
+    "typewriter-effect": "^2.18.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "dependencies": {
-        "bootstrap": "5.1.3"
-    },
-    "devDependencies": {
-        "autoprefixer": "10.4.4",
-        "browser-sync": "2.27.9",
-        "chokidar": "3.5.3",
-        "concurrently": "6.3.0",
-        "postcss": "8.4.12",
-        "prettier": "2.6.0",
-        "pug": "3.0.2",
-        "sass": "1.49.9",
-        "shelljs": "^0.8.5",
-        "upath": "2.0.1"
-    }
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
